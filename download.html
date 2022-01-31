@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--
+  The MassOS Website - Copyright (C) 2022 MassOS Developers.
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Download MassOS</title>
+  <link rel="icon" href="resources/images/favicon.png">
+	<link href="index.css" rel="stylesheet">
+	<script src="index.js"></script>
+</head>
+
+<body onload="showversion()">
+  <button class="button" onclick="window.location.href='.'">Go back to the homepage</button>
+  <h1 class="title">Download MassOS</h1>
+  <h3>You can download MassOS now, to try it out and/or install it on your PC.</h3>
+  <p>All releases of MassOS can be downloaded from the <a href="https://github.com/MassOS-Linux/MassOS/releases" target="_blank" >GitHub releases page</a>. From there you can also verify your download against the SHA256 checksums and look at the release notes.</p>
+  <p>After downloading, please read the <a href="https://github.com/MassOS-Linux/MassOS/blob/main/installation-guide.md" target="_blank">installation guide</a> for information on how to create a bootable USB flash drive for trying/installing MassOS.</p>
+  <h3>There are 3 possible download files, which one should I pick?</h3>
+  <p>For the majority of users, you should grab the <u>standard ISO</u>, labelled "massos-<em>VERSION</em>-x86_64.iso". Choose this if you unsure.</p>
+  <p>The alternative "<em>-nofirmware</em>" ISO, which contains no proprietary firmware, should <u>only</u> be chosen if you know your hardware doesn't depend on the firmware.</p>
+  <p>Finally, there is the Rootfs tarball (.tar.xz file). This is designed for advanced users who want to <a href="https://github.com/MassOS-Linux/MassOS/blob/main/old-installation-guide.md" target="_blank">manually install MassOS</a>.</p>
+</body>
+
+<footer>
+  <p>-------------------------</p>
+  <p>Copyright (C) 2022 MassOS Developers.</p>
+  <p><a href="https://github.com/MassOS-Linux/massos-linux.github.io">View the source code for this website on GitHub.</a></p>
+</footer>
+
+</html>

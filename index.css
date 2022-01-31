@@ -1,0 +1,68 @@
+/*
+  The MassOS Website - Copyright (C) 2022 MassOS Developers.
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@font-face {
+  font-family: suit-medium;
+  src: url(resources/fonts/SUIT/SUIT-Medium.woff2);
+}
+
+@font-face {
+  font-family: suit-bold;
+  src: url(resources/fonts/SUIT/SUIT-Bold.woff2);
+}
+
+@font-face {
+  font-family: suit-heavy;
+  src: url(resources/fonts/SUIT/SUIT-Heavy.woff2)
+}
+body {
+  background-color: #202020;
+  color: white;
+  font-family: suit-medium;
+  text-align: center;
+}
+
+.title {
+  font-family: suit-bold;
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  background-color: #1f1fc6;
+  border: 4px solid turquoise;
+  border-radius: 16px;
+  color: white;
+  font-family: suit-medium;
+  font-size: 18px;
+  padding: 6px 12px;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: darkgreen;
+  border-radius: 8px;
+}
+
+#about {
+  text-decoration: underline;
+}
