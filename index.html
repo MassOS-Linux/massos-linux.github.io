@@ -25,20 +25,22 @@
 	<title>MassOS GNU/Linux</title>
   <link rel="icon" href="resources/images/favicon.png">
 	<link href="index.css" rel="stylesheet">
+  <link href="navbar.css" rel="stylesheet">
 	<script src="index.js"></script>
 </head>
 
 <body onload="indexload()">
+  <div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="download.html">Download</a>
+    <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Install</a>
+    <a href="https://github.com/MassOS-Linux/MassOS/wiki" target="_blank">Documentation</a>
+    <a href="screenshots.html">Screenshots</a>
+    <a href="https://github.com/MassOS-Linux" target="_blank">Github</a>
+  </div>
 	<h1 class="title">MassOS GNU/Linux</h1>
 	<h3 id="subtitle" class="main"></h3>
   <img src="resources/images/massos-desktop-screenshot.png" width="50%" height="50%" alt="Screenshot of the MassOS desktop"><br>
-  <div>
-    <button class="button" onclick="window.location.href='download.html'">Download MassOS</button>
-    <button class="button" onclick="window.open('https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS','_blank')">Installation Guide</button>
-    <button class="button" onclick="window.location.href='screenshots.html'">Screenshots</button>
-    <button class="button" onclick="window.open('https://github.com/MassOS-Linux/MassOS/wiki','_blank')">Documentation</button>
-    <button class="button" onclick="window.open('https://github.com/MassOS-Linux','_blank')">GitHub</button>
-  </div>
   <h2 id="about">About MassOS</h2>
   <p>MassOS is a free (as in <a href="https://www.gnu.org/philosophy/free-sw.html" target="_blank">freedom</a>) GNU/Linux operating system for laptops and desktops which is designed to be minimal and lightweight, without compromising on features.</p>
   <p>MassOS uses a themed <a href="https://xfce.org" target="_blank">Xfce</a> desktop environment. This allows it to be lightweight on system resources while still being visually appealing and easy to use.</p>

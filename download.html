@@ -25,11 +25,19 @@
 	<title>Download MassOS</title>
   <link rel="icon" href="resources/images/favicon.png">
 	<link href="index.css" rel="stylesheet">
+  <link href="navbar.css" rel="stylesheet">
 	<script src="index.js"></script>
 </head>
 
 <body onload="showversion()">
-  <button class="button" onclick="window.location.href='.'">Go back to the homepage</button>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="download.html" class="active">Download</a>
+    <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Install</a>
+    <a href="https://github.com/MassOS-Linux/MassOS/wiki" target="_blank">Documentation</a>
+    <a href="screenshots.html">Screenshots</a>
+    <a href="https://github.com/MassOS-Linux" target="_blank">Github</a>
+  </div>
   <h1 class="title">Download MassOS</h1>
   <h3>You can download MassOS now, to try it out and/or install it on your PC.</h3>
   <p>All releases of MassOS can be downloaded from the <a href="https://github.com/MassOS-Linux/MassOS/releases" target="_blank" >GitHub releases page</a>. From there you can also verify your download against the SHA256 checksums and look at the release notes.</p>
