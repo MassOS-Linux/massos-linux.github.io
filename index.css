@@ -34,7 +34,7 @@ body {
   color: white;
   font-family: suit-medium;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 .title {
@@ -66,4 +66,33 @@ img {
 
 #about {
   text-decoration: underline;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  font-family: suit-medium;
+  background-color: #9d4edd;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float:left;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: #8340b9;
+}
+
+.active {
+  background-color: #c175ff;
 }
