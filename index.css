@@ -49,6 +49,10 @@ img {
   margin-right: auto;
 }
 
+a {
+  color: #c175ff;
+}
+
 .button {
   background-color: #1f1fc6;
   border: 4px solid turquoise;
