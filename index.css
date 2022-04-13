@@ -43,6 +43,13 @@ body {
   text-decoration: underline;
 }
 
+.text {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -79,25 +86,19 @@ a {
   padding: 0;
   top: 0;
   width: 100%;
-  position: fixed;
+  position: absolute;
   overflow: hidden;
   font-family: suit-medium;
-  background-color: #9d4edd;
 }
 
 .navbar a {
-  display: block;
-  color: white;
+  display: inline-block;
+  color: rgb(245, 245, 245);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  float:left;
-}
-
-.navbar a:hover:not(.active) {
-  background-color: #8340b9;
 }
 
 .active {
-  background-color: #c175ff;
+  color: #f8f8f8;
 }
