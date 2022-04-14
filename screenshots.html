@@ -25,19 +25,21 @@
   <title>MassOS Screenshots</title>
   <link rel="icon" href="resources/images/favicon.png">
   <link href="index.css" rel="stylesheet">
-  <link href="navbar.css" rel="stylesheet">
   <script src="index.js"></script>
 </head>
 
-<body>
-  <div class="navbar">
-    <a href="index.html" style="float: left;font-family: suit-bold;">MassOS</a>
-    <a href="index.html">Home</a>
+<body id="body">
+  <div class="navbar" id="respnav">
+    <a href="index.html" id="title">MassOS</a>
+    <a href="index.html" class="active">Home</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Install</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki" target="_blank">Docs</a>
-    <a href="screenshots.html" class="active">Screenshots</a>
+    <a href="screenshots.html">Screenshots</a>
     <a href="https://github.com/MassOS-Linux" target="_blank">Github</a>
-    <a href="download.html" style="background-color: white;color: #202020;float: right;border-radius: 10px;">Download</a>
+    <a href="download.html" class="download">Download</a>
+    <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
   <h1 class="title">MassOS Screenshots</h1>
   <h3>Here are some screenshots of MassOS:</h3>
@@ -51,10 +53,11 @@
   <img src="resources/images/feature-screenshot.png" height="50%" width="50%" alt="Screenshot of Mozilla Firefox and Parole Media Player on MassOS.">
 </body>
 
-<footer style="bottom: 0%;">
-  <p>-------------------------</p>
-  <p>Copyright (C) 2022 MassOS Developers.</p>
-  <p><a href="https://github.com/MassOS-Linux/massos-linux.github.io">View the source code for this website on GitHub.</a></p>
+<footer>
+  <div style="padding-top: 10px;margin-left: 2%;">
+    <p class="title">MassOS</p>
+    <p>Copyright (C) 2022 MassOS Developers. <a href="https://github.com/MassOS-Linux/massos-linux.github.io">View the source code for this website on GitHub.</a></p>
+  </div>
 </footer>
 
 </html>

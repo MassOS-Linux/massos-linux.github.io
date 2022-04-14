@@ -28,30 +28,36 @@
   <script src="index.js"></script>
 </head>
 
-<body onload="showversion()">
-  <div class="navbar">
-    <a href="index.html" style="float: left;font-family: suit-bold;">MassOS</a>
-    <a href="index.html">Home</a>
+<body onload="showversion()" id="body">
+  <div class="navbar" id="respnav">
+    <a href="index.html" id="title">MassOS</a>
+    <a href="index.html" class="active">Home</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Install</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki" target="_blank">Docs</a>
     <a href="screenshots.html">Screenshots</a>
     <a href="https://github.com/MassOS-Linux" target="_blank">Github</a>
-    <a href="download.html" style="background-color: white;color: #202020;float: right;border-radius: 10px;">Download</a>
+    <a href="download.html" class="download">Download</a>
+    <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
   <h1 class="title">Download MassOS</h1>
-  <h3>You can download MassOS now, to try it out and/or install it on your PC.</h3>
-  <p>All releases of MassOS can be downloaded from the <a href="https://github.com/MassOS-Linux/MassOS/releases" target="_blank" >GitHub releases page</a>. From there you can also verify your download against the SHA256 checksums and look at the release notes.</p>
-  <p>After downloading, please read the <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">installation guide</a> for information on how to create a bootable USB flash drive for trying/installing MassOS.</p>
-  <h3>There are 3 possible download files, which one should I pick?</h3>
-  <p>For the majority of users, you should grab the <u>standard ISO</u>, labelled "massos-<em>VERSION</em>-x86_64.iso". Choose this if you unsure.</p>
-  <p>The alternative "<em>-nofirmware</em>" ISO, which contains no proprietary firmware, should <u>only</u> be chosen if you know your hardware doesn't depend on the firmware.</p>
-  <p>Finally, there is the Rootfs tarball (.tar.xz file). This is designed for advanced users who want to <a href="https://github.com/MassOS-Linux/MassOS/wiki/Manual-Installation" target="_blank">manually install MassOS</a>.</p>
+  <div class="text">
+    <h3>You can download MassOS now, to try it out and/or install it on your PC.</h3>
+    <p>All releases of MassOS can be downloaded from the <a href="https://github.com/MassOS-Linux/MassOS/releases" target="_blank" >GitHub releases page</a>. From there you can also verify your download against the SHA256 checksums and look at the release notes.</p>
+    <p>After downloading, please read the <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">installation guide</a> for information on how to create a bootable USB flash drive for trying/installing MassOS.</p>
+    <h3>There are 3 possible download files, which one should I pick?</h3>
+    <p>For the majority of users, you should grab the <u>standard ISO</u>, labelled "massos-<em>VERSION</em>-x86_64.iso". Choose this if you unsure.</p>
+    <p>The alternative "<em>-nofirmware</em>" ISO, which contains no proprietary firmware, should <u>only</u> be chosen if you know your hardware doesn't depend on the firmware.</p>
+    <p>Finally, there is the Rootfs tarball (.tar.xz file). This is designed for advanced users who want to <a href="https://github.com/MassOS-Linux/MassOS/wiki/Manual-Installation" target="_blank">manually install MassOS</a>.</p>
+  </div>
 </body>
 
 <footer>
-  <p>-------------------------</p>
-  <p>Copyright (C) 2022 MassOS Developers.</p>
-  <p><a href="https://github.com/MassOS-Linux/massos-linux.github.io">View the source code for this website on GitHub.</a></p>
+  <div style="padding-top: 20px;margin-left: 2%;">
+    <p class="title">MassOS</p>
+    <p>Copyright (C) 2022 MassOS Developers. <a href="https://github.com/MassOS-Linux/massos-linux.github.io">View the source code for this website on GitHub.</a></p>
+  </div>
 </footer>
 
 </html>

@@ -25,3 +25,15 @@ function indexload() {
   let subtitle = subtitles[parseInt(Math.random(subtitles.length) * 3)]
   document.getElementById("subtitle").innerText = subtitle
 }
+
+function hamburger() {
+  var x = document.getElementById("respnav");
+  var body = document.getElementById("body");
+  if (x.className === "navbar") {
+    x.className += " responsive"
+    body.className = "hambody"
+  } else {
+    x.className = "navbar"
+    body.className = ""
+  }
+}
