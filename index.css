@@ -131,6 +131,38 @@ footer {
   background-color: rgb(19, 19, 19);
 }
 
+body.light {
+  background-color: white;
+  color: #202020;
+}
+
+.navbar.light a {
+  color: #202020;
+  background-color: white;
+}
+
+.navbar.light a.download {
+  background-color: #202020;
+  color: white;
+}
+
+footer.light {
+  background-color: #f8f8f8;
+}
+
+.pgnotfound {
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes bounce {
+  0% {transform: translate3d(0, 0, 0);}
+  50% {transform: translate3d(0, -50px, 0);}
+  0% {transform: translate3d(0, 0, 0);}
+}
+
 @media screen and (max-width: 600px) {
   .text {width: 80%;}
   .navbar a:not(:first-child) {display: none;}
@@ -151,7 +183,7 @@ footer {
     background-color: #202020;
   }
   .hambody {
-    padding-top: 340px;
+    padding-top: 410px;
   }
 }
 
@@ -175,6 +207,9 @@ footer {
     float: none;
     display: block;
     text-align: left;
+  }.navbar.light a.download {
+    background-color: white;
+    color: #202020;
   }
 }
 

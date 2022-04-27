@@ -30,12 +30,13 @@
 
 <body onload="showversion()" id="body">
   <div class="navbar" id="respnav">
-    <a href="index.html" id="title">MassOS</a>
-    <a href="index.html" class="active">Home</a>
+    <a href="." id="title">MassOS</a>
+    <a href="." class="active">Home</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Install</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki" target="_blank">Docs</a>
     <a href="screenshots.html">Screenshots</a>
     <a href="https://github.com/MassOS-Linux" target="_blank">Github</a>
+    <a href="javascript:void(0);" onclick="colormodechanger()" id="colormodenav">Light</a>
     <a href="download.html" class="download">Download</a>
     <a href="javascript:void(0);" class="icon" onclick="hamburger()">
       <i class="fa fa-bars"></i>
@@ -53,7 +54,7 @@
   </div>
 </body>
 
-<footer>
+<footer id="footer">
   <div style="padding-top: 20px;margin-left: 2%;">
     <p class="title">MassOS</p>
     <p>Copyright (C) 2022 MassOS Developers. <a href="https://github.com/MassOS-Linux/massos-linux.github.io">View the source code for this website on GitHub.</a></p>
