@@ -1,0 +1,5 @@
+@media screen and (min-height: 506px) and (min-width: 1400px) {
+    footer {
+      bottom: 0;
+    }
+}
