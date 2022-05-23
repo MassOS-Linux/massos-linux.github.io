@@ -1,0 +1,73 @@
+@import "color.css";
+
+.navbar {
+  list-style-type: none;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 20px 16px;
+  color: var(--color);
+}
+
+.navbar a:first-child {
+  float: left;
+  font-family: suit-bold;
+}
+
+.navbar a:last-child {
+  display: none;
+}
+
+.navbar a.download {
+  float: right;
+  background-color: var(--color);
+  color: var(--bg-color);
+  top: 21%;
+  right: 2%;
+  padding: 10px 10px;
+  border-radius: 8px;
+  position: sticky;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+
+  .navbar a:last-child {
+    display: inline-block;
+    float: right;
+  }
+
+  .navbar.expanded {
+    padding
+  }
+
+  .navbar.expanded a {
+    float: none;
+    text-align: left;
+    display: block;
+    background-color: var(--bg-color);
+    color: var(--color);
+  }
+
+  .navbar a.download {
+    top: 0;
+    right: 0;
+    padding: 20px 16px;
+  }
+  .navbar.expanded a:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  body.navexpanded {
+    padding-top: 475px;
+  }
+}
