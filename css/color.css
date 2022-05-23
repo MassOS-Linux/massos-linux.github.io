@@ -1,0 +1,11 @@
+.dark {
+  --bg-color: #202020;
+  --color: #ffffff;
+  --footer-bg-color: rgb(19, 19, 19);
+}
+
+.light {
+  --bg-color: #ffffff;
+  --color: #202020;
+  --footer-bg-color: #f8f8f8;
+}

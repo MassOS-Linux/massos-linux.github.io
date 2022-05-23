@@ -1,0 +1,14 @@
+@font-face {
+  font-family: suit-medium;
+  src: url(SUIT/SUIT-Medium.woff2);
+}
+
+@font-face {
+  font-family: suit-bold;
+  src: url(SUIT/SUIT-Bold.woff2);
+}
+
+@font-face {
+  font-family: suit-heavy;
+  src: url(SUIT/SUIT-Heavy.woff2);
+}
