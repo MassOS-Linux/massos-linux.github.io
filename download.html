@@ -23,21 +23,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Download MassOS</title>
-  <link rel="icon" href="resources/images/favicon.png">
-  <link href="index.css" rel="stylesheet">
-  <link href="download.css" rel="stylesheet">
-  <script src="index.js"></script>
+  <link rel="icon" href="images/favicon.png">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <script src="js/index.js"></script>
 </head>
 
-<body onload="showversion()" id="body">
-  <div class="navbar" id="respnav">
+<body class="dark">
+  <div class="navbar" id="navbar">
     <a href="." id="title">MassOS</a>
     <a href="." class="active">Home</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Install</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki" target="_blank">Docs</a>
     <a href="screenshots.html">Screenshots</a>
     <a href="https://github.com/MassOS-Linux" target="_blank">Github</a>
-    <a href="javascript:void(0);" onclick="colormodechanger()" id="colormodenav">Light</a>
+    <a href="javascript:void(0);" id="colormodenav" onclick="colorbuttonclick()">Light</a>
     <a href="download.html" class="download">Download</a>
     <a href="javascript:void(0);" class="icon" onclick="hamburger()">
       <i class="fa fa-bars"></i>

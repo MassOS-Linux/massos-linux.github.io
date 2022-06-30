@@ -23,26 +23,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>MassOS GNU/Linux</title>
-  <link rel="icon" href="resources/images/favicon.png">
-  <link href="index.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="index.js"></script>
+  <script src="js/index.js"></script>
   <meta content="MassOS GNU/Linux" property="og:title" />
   <meta content="MassOS is a free GNU/Linux operating system for laptops and desktops which is designed to be minimal and lightweight, without compromising on features." property="og:description" />
   <meta content="https://massos.org" property="og:url" />
-  <meta content="https://massos.org/resources/images/massos-desktop-screenshot.png" property="og:image" />
+  <meta content="https://massos.org/images/massos-desktop-screenshot.png" property="og:image" />
   <meta content="#c175ff" data-react-helmet="true" name="theme-color" />
 </head>
 
-<body onload="indexload()" id="body">
-  <div class="navbar" id="respnav">
+<body class="dark" onload="indexload()">
+  <div class="navbar" id="navbar">
     <a href="." id="title">MassOS</a>
     <a href="." class="active">Home</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Install</a>
     <a href="https://github.com/MassOS-Linux/MassOS/wiki" target="_blank">Docs</a>
     <a href="screenshots.html">Screenshots</a>
     <a href="https://github.com/MassOS-Linux" target="_blank">Github</a>
-    <a href="javascript:void(0);" onclick="colormodechanger()" id="colormodenav">Light</a>
+    <a href="javascript:void(0);" id="colormodenav" onclick="colorbuttonclick()">Light</a>
     <a href="download.html" class="download">Download</a>
     <a href="javascript:void(0);" class="icon" onclick="hamburger()">
       <i class="fa fa-bars"></i>
@@ -50,7 +51,7 @@
   </div>
   <h1 class="title">MassOS GNU/Linux</h1>
   <h3 id="subtitle" class="main"></h3>
-  <img src="resources/images/massos-desktop-screenshot.png" width="50%" height="50%" alt="Screenshot of the MassOS desktop"><br>
+  <img src="images/massos-desktop-screenshot.png" width="50%" height="50%" alt="Screenshot of the MassOS desktop"><br>
   <h2>About MassOS</h2>
   <div class="text">
     <p>MassOS is a <a href="https://github.com/MassOS-Linux/MassOS/wiki/MassOS-and-Free-Software" target="_blank">free</a> GNU/Linux operating system for laptops and desktops which is designed to be minimal and lightweight, without compromising on features.</p>
