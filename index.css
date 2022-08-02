@@ -29,6 +29,7 @@
   font-family: suit-heavy;
   src: url(resources/fonts/SUIT/SUIT-Heavy.woff2)
 }
+
 body {
   background-color: #202020;
   color: white;
@@ -58,6 +59,10 @@ img {
 a {
   color: #c175ff;
   text-decoration: none;
+}
+
+.sstext {
+  text-decoration: underline;
 }
 
 .button {
