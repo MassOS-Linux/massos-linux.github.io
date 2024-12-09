@@ -17,17 +17,17 @@
 
 @font-face {
   font-family: suit-medium;
-  src: url(resources/fonts/SUIT/SUIT-Medium.woff2);
+  src: url(../resources/fonts/SUIT/SUIT-Medium.woff2);
 }
 
 @font-face {
   font-family: suit-bold;
-  src: url(resources/fonts/SUIT/SUIT-Bold.woff2);
+  src: url(../resources/fonts/SUIT/SUIT-Bold.woff2);
 }
 
 @font-face {
   font-family: suit-heavy;
-  src: url(resources/fonts/SUIT/SUIT-Heavy.woff2)
+  src: url(../resources/fonts/SUIT/SUIT-Heavy.woff2)
 }
 
 :root {
