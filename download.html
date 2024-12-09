@@ -24,31 +24,34 @@
   <meta name="viewport" content="width=device-width">
   <title>Download MassOS</title>
   <link rel="icon" href="resources/images/favicon.png">
-  <link href="index.css" rel="stylesheet">
-  <link href="download.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/download.css" rel="stylesheet">
   <script src="index.js"></script>
 </head>
 
-<body id="body">
-  <div class="navbar" id="respnav">
+<body>
+  <div class="flexWrapper">
+  <div id="navbar">
     <a href="." id="title">MassOS</a>
-    <a href="." class="active">Home</a>
-    <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Install</a>
-    <a href="https://github.com/MassOS-Linux/MassOS/wiki" target="_blank">Docs</a>
-    <a href="screenshots.html">Screenshots</a>
-    <a href="https://github.com/MassOS-Linux" target="_blank">Github</a>
-    <a href="javascript:void(0);" onclick="colormodechanger()" id="colormodenav">Light</a>
-    <a href="download.html" class="download">Download</a>
-    <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-      <i class="fa fa-bars"></i>
-    </a>
+    <div class="links">
+      <a href=".">Home</a>
+      <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Install</a>
+      <a href="https://github.com/MassOS-Linux/MassOS/wiki" target="_blank">Docs</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="https://github.com/MassOS-Linux" target="_blank">Github</a>
+    </div>
+    <div class="downloadbtn">
+      <a href="download.html" class="download">Download</a>
+    </div>
   </div>
-  <h1 class="title">Download MassOS</h1>
-  <div class="text">
-    <h3>You can download MassOS now, to try it out and/or install it on your PC.</h3>
-    <p>MassOS was discontinued in December 2022. The last stable release before discontinuation is <strong>MassOS 2022.10</strong>, which can be downloaded from the <a href="https://github.com/MassOS-Linux/MassOS/releases" target="_blank">GitHub releases page</a> (both Xfce and GNOME variants), alongside all previous versions. Note, however, that these legacy versions are outdated and may have security vulnerabilities, so are not recommended for use on real hardware (you should use a VM). Also be aware that newer hardware, particularly GPUs, may not be supported by builds with older versions of the Linux kernel.</p>
-    <p>As of January 2025, MassOS development has transitioned to an indefinite experimental phase. Any subsequent commits to the MassOS repository are done purely for testing purposes; they will not be given support and are not indicative of any future MassOS release. Nonetheless, these builds are made available from <a href="https://dmassey.net/files/massos-experimental-builds/" target="_blank">this web server</a>. Before using these builds, it is strongly recommended that you read both the changelog and important notices in the <a href="https://github.com/MassOS-Linux/MassOS/blob/development/changelog.md" target="_blank">changelog.md</a> file in the MassOS GitHub repository. Also be aware that only Xfce builds are provided at this time.</p>
-    <p>After downloading, please read <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Installing MassOS</a> for a detailed guide on how to create a bootable USB flash drive and install MassOS onto your computer.</p>
+  <div class="content">
+    <h1 class="title">Download MassOS</h1>
+    <div class="text">
+      <h3>You can download MassOS now, to try it out and/or install it on your PC.</h3>
+      <p>MassOS was discontinued in December 2022. The last stable release before discontinuation is <strong>MassOS 2022.10</strong>, which can be downloaded from the <a href="https://github.com/MassOS-Linux/MassOS/releases" target="_blank">GitHub releases page</a> (both Xfce and GNOME variants), alongside all previous versions. Note, however, that these legacy versions are outdated and may have security vulnerabilities, so are not recommended for use on real hardware (you should use a VM). Also be aware that newer hardware, particularly GPUs, may not be supported by builds with older versions of the Linux kernel.</p>
+      <p>As of January 2025, MassOS development has transitioned to an indefinite experimental phase. Any subsequent commits to the MassOS repository are done purely for testing purposes; they will not be given support and are not indicative of any future MassOS release. Nonetheless, these builds are made available from <a href="https://dmassey.net/files/massos-experimental-builds/" target="_blank">this web server</a>. Before using these builds, it is strongly recommended that you read both the changelog and important notices in the <a href="https://github.com/MassOS-Linux/MassOS/blob/development/changelog.md" target="_blank">changelog.md</a> file in the MassOS GitHub repository. Also be aware that only Xfce builds are provided at this time.</p>
+      <p>After downloading, please read <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Installing MassOS</a> for a detailed guide on how to create a bootable USB flash drive and install MassOS onto your computer.</p>
+    </div>
   </div>
 </body>
 
