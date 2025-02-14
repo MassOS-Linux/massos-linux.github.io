@@ -24,7 +24,7 @@ let subtitles = [
 var currentcolormode = "dark"
 var isresponsive = false
 
-function indexload() {
+function headertext() {
   let subtitle = subtitles[parseInt(Math.random(subtitles.length) * 3)]
   document.getElementById("subtitle").innerText = subtitle
 }
