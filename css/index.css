@@ -63,7 +63,7 @@ body {
   display: flex;
   width: 97%;
   min-height: 7vh;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 3vh;
 }
@@ -100,6 +100,10 @@ body {
 a {
   color: var(--primary);
   text-decoration: none;
+}
+
+img {
+  width: auto;
 }
 
 .sstext {
