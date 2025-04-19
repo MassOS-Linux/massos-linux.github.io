@@ -15,73 +15,63 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-let subtitles = [
+const subtitles = [
   "Minimal, without compromising on features.",
   "Completely independent, built from scratch.",
   "A modern, yet lightweight desktop experience.",
 ]
 
-var currentcolormode = "dark"
-var isresponsive = false
-
-function headertext() {
+function indexload() {
   let subtitle = subtitles[parseInt(Math.random(subtitles.length) * 3)]
   document.getElementById("subtitle").innerText = subtitle
-}
-
-function hamburger() {
-  var x = document.getElementById("respnav")
-  var body = document.getElementById("body")
-  if (x.className === "navbar") {
-    x.className += " responsive"
-    body.className = "hambody"
-    isresponsive = true
-  } else if (x.className === "navbar light") {
-    x.className += " responsive"
-    body.className = "hambody light"
-  } else {
-    if (currentcolormode === "light") {
-      if (isresponsive) {
-        x.className = "navbar responsive light"
-        body.className = "hambody light"
-      } else {
-        x.className = "navbar light"
-        body.className = "light"
-      }
-    } else {
-      x.className = "navbar"
-      body.className = ""
-    }
-    isresponsive = false
+  const bodyClassList = document.body.classList
+  const colorbutton = document.getElementById("colormodenav")
+  if (localStorage.getItem("colormode") == "light") {
+    bodyClassList.replace("dark", "light")
+    colorbutton.innerText = "Dark"
   }
 }
 
-function colormodechanger() {
-  var x = document.getElementById("respnav")
-  var body = document.getElementById("body")
-  var colorblocknav = document.getElementById("colormodenav")
-  var footer = document.getElementById("footer")
-  if (currentcolormode === "light") {
-    if (isresponsive) {
-      body.className = "hambody"
-      x.className = "navbar responsive"
-    } else {
-      body.className = ""
-      x.className = "navbar"
-    }
-    footer.className = ""
-    colorblocknav.innerText = "Light"
-    currentcolormode = "dark"
+window.onload = () => {
+  const bodyClassList = document.body.classList
+  const colorbutton = document.getElementById("colormodenav")
+  if (localStorage.getItem("colormode") == "light") {
+    bodyClassList.replace("dark", "light")
+    colorbutton.innerText = "Dark"
+  }
+}
+
+function colorbuttonclick() {
+  const bodyClassList = document.body.classList
+  const colorbutton = document.getElementById("colormodenav")
+  if (localStorage.getItem("colormode") == null) {
+    localStorage.setItem("colormode", "light")
+    bodyClassList.replace("dark", "light")
+    colorbutton.innerText = "Dark"
   } else {
-    if (isresponsive) {
-      body.className = "hambody light"
-      x.className = "navbar responsive light"
-    } else {
-      body.className = "light"
-      x.className = "navbar light"
+    switch (localStorage.getItem("colormode")) {
+      case "dark":
+        localStorage.setItem("colormode", "light")
+        bodyClassList.replace("dark", "light")
+        colorbutton.innerText = "Dark"
+        break
+      case "light":
+        localStorage.setItem("colormode", "dark")
+        bodyClassList.replace("light", "dark")
+        colorbutton.innerText = "Light"
+        break
     }
-    footer.className = "light"
-    colorblocknav.innerText = "Dark"
-    currentcolormode = "light"
+  }
+}
+
+function hamburger() {
+  const bodyClassList = document.body.classList
+  const navClassList = document.getElementById("navbar").classList
+  if (navClassList.contains("expanded")) {
+    navClassList.remove("expanded")
+    bodyClassList.remove("navexpanded")
+  } else {
+    navClassList.add("expanded")
+    bodyClassList.add("navexpanded")
   }
 }
