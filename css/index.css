@@ -1,0 +1,135 @@
+/*
+  The MassOS Website - Copyright (C) 2022 MassOS Developers.
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@font-face {
+  font-family: suit-medium;
+  src: url(../resources/fonts/SUIT/SUIT-Medium.woff2);
+}
+
+@font-face {
+  font-family: suit-bold;
+  src: url(../resources/fonts/SUIT/SUIT-Bold.woff2);
+}
+
+@font-face {
+  font-family: suit-heavy;
+  src: url(../resources/fonts/SUIT/SUIT-Heavy.woff2);
+}
+
+:root {
+  --text: #dbdbdb;
+  --background: #000000;
+  --primary: #c175ff;
+  --secondary: #d875ff;
+  --accent: #cd75ff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: suit-medium;
+  margin: 0;
+  border: 0;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vh;
+  min-height: 100vh;
+}
+
+.title {
+  font-family: suit-bold;
+}
+
+#navbar {
+  display: flex;
+  width: 97vw;
+  min-height: 7vh;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+#navbar .links {
+  display: flex;
+  justify-self: center;
+  gap: 2.5em;
+}
+
+#navbar:first-child a {
+  font-family: suit-bold;
+}
+
+.downloadbtn {
+  padding: .6rem .6rem;
+  border-radius: 10px;
+  background-color: var(--text);
+  color: var(--background);
+}
+
+#navbar a {
+  color: var(--color);
+}
+
+#navbar .active {
+  text-decoration: underline;
+}
+
+.text {
+  max-width: 50vw;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+img {
+  width: 50vw;
+}
+
+.sstext {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  margin-top: 4vh;
+  width: 100%;
+}
+
+.pgnotfound {
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes bounce {
+  0% {transform: translate3d(0, 0, 0);}
+  50% {transform: translate3d(0, -50px, 0);}
+  0% {transform: translate3d(0, 0, 0);}
+}
