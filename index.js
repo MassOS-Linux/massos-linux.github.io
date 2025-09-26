@@ -21,7 +21,7 @@ const subtitles = [
   "A modern, yet lightweight desktop experience.",
 ]
 
-function indexload() {
+function showsubtitle() {
   let subtitle = subtitles[parseInt(Math.random(subtitles.length) * 3)]
   document.getElementById("subtitle").innerText = subtitle
   const bodyClassList = document.body.classList
