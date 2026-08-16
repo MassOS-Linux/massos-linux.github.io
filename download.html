@@ -47,10 +47,39 @@
     <div class="content">
       <h1 class="title">Download MassOS</h1>
       <div class="text">
-        <h3>You can download MassOS now, to try it out and/or install it on your PC.</h3>
-        <p>This page will be updated after the upcoming release of <strong>MassOS 2026.09</strong>. We appreciate your patience! Download links for pre-2023 builds such as <strong>2022.10</strong> have been removed as use of those legacy builds is not recommended under any circumstance.</p>
-        <p>For now, current (experimental) builds are available from <a href="https://archive.massos.org/builds/" target="_blank">this web server</a>. Before using these builds, it is strongly recommended that you read both the changelog and important notices in the <a href="https://github.com/MassOS-Linux/MassOS/blob/development/changelog.md" target="_blank">changelog.md</a> document in the MassOS source repository. Also be aware that the GNOME variant of MassOS is discontinued, and, at the time of writing, only builds with the Xfce desktop environment are available.</p>
-        <p>After downloading, please read <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Installing MassOS</a> for a detailed guide on how to create a bootable USB flash drive and install MassOS onto your computer. If your system uses <strong>UEFI Secure Boot</strong>, you may need to perform some additional steps in order to be able to successfully boot MassOS - see <a href="https://github.com/MassOS-Linux/MassOS/wiki/UEFI-Secure-Boot" target="_blank">UEFI Secure Boot</a> for more information.</p>
+        <h2>You can download MassOS now, to try it out and/or install it on your PC.</h2>
+        <p>The release notes for all stable versions of MassOS, as well as the current development build(s), can be found <a href="https://github.com/MassOS-Linux/MassOS/blob/development/changelog.md" target="_blank">here</a>.</p>
+        <p>Each release will have both a <strong>Live ISO image</strong> and a <strong>Rootfs tarball</strong> tarball. Most users will want the <strong>Live ISO image</strong>, which can be written to a USB flash drive, and provides a bootable live environment for trying out MassOS without making any changes to your computer. Once you've tried out the live environment and are ready to fully install MassOS onto your computer, a <a href="https://github.com/DanielMYT/osinstallgui" target="_blank">graphical installation program</a> is provided on the live system which guides you through this process.</p>
+        <p>By contrast, the <strong>Rootfs tarball</strong> is only useful for those who wish to <a href="https://github.com/MassOS-Linux/MassOS/wiki/Manual-Installation" target="_blank">manually install MassOS</a> (which is not recommended), or for performing an offline update with <a href="https://github.com/MassOS-Linux/upgrade-massos" target="_blank">the new MassOS upgrade utility</a> (as opposed to the utility's default mechanism of performing online updates using the MassOS upgrade server).</p>
+        <h2>Stable release - 2026.09</h2>
+        <p>The stable release is the recommended choice for most users. New stable releases are published at least once a month. Updating an existing installation can be done using <a href="https://github.com/MassOS-Linux/upgrade-massos" target="_blank">the new MassOS upgrade utility</a> when configured for the "stable" channel.</p>
+        <p><em>This version of MassOS includes <strong>Linux kernel TBC (likely 7.2.x)</strong>.</em></p>
+        <h3>Intel/AMD 64-bit (x86_64)</h3>
+        <ul>
+          <li>Good things come to those who wait! These download links will become available in early September 2026...</li>
+        </ul>
+        <h3>ARM 64-bit (aarch64)</h3>
+        <ul>
+          <li>Good things come to those who wait! These download links will become available in early September 2026...</li>
+        </ul>
+        <h2>Development build - 2026.09.dev1</h2>
+        <p>Development builds are produced fairly frequently, to test upcoming changes and updates before they reach stable releases. These builds are only recommended for experienced users, as they are significantly more likely to encounter stability and/or usability issues. Updating an existing installation can be done using <a href="https://github.com/MassOS-Linux/upgrade-massos" target="_blank">the new MassOS upgrade utility</a>. Systems running stable builds can be updated in-place to development builds by (re)configuring the upgrade utility to use the "experimental" channel instead of "stable".</p>
+        <p><em>This version of MassOS includes <strong>Linux kernel 7.1.8</strong>.</em></p>
+        <h3>Intel/AMD 64-bit (x86_64)</h3>
+        <ul>
+          <li>Live ISO image (Xfce desktop): <a href="https://archive.massos.org/builds/x86_64/2026.09.dev1/massos-2026.09.dev1-livecd-x86_64-xfce.iso">Download</a>, <a href="https://archive.massos.org/builds/x86_64/2026.09.dev1/massos-2026.09.dev1-livecd-x86_64-xfce.iso.b2">Checksum</a>, <a href="https://archive.massos.org/builds/x86_64/2026.09.dev1/massos-2026.09.dev1-livecd-x86_64-xfce.iso.asc">Signature</a></li>
+          <li>Rootfs tarball (Xfce desktop): <a href="https://archive.massos.org/builds/x86_64/2026.09.dev1/massos-2026.09.dev1-rootfs-x86_64-xfce.tar.zst">Download</a>, <a href="https://archive.massos.org/builds/x86_64/2026.09.dev1/massos-2026.09.dev1-rootfs-x86_64-xfce.tar.zst.b2">Checksum</a>, <a href="https://archive.massos.org/builds/x86_64/2026.09.dev1/massos-2026.09.dev1-rootfs-x86_64-xfce.tar.zst.asc">Signature</a></li>
+        </ul>
+        <h3>ARM 64-bit (aarch64)</h3>
+        <ul>
+          <li>Live ISO image (Xfce desktop): <a href="https://archive.massos.org/builds/aarch64/2026.09.dev1/massos-2026.09.dev1-livecd-aarch64-xfce.iso">Download</a>, <a href="https://archive.massos.org/builds/aarch64/2026.09.dev1/massos-2026.09.dev1-livecd-aarch64-xfce.iso.b2">Checksum</a>, <a href="https://archive.massos.org/builds/aarch64/2026.09.dev1/massos-2026.09.dev1-livecd-aarch64-xfce.iso.asc">Signature</a></li>
+          <li>Rootfs tarball (Xfce desktop): <a href="https://archive.massos.org/builds/aarch64/2026.09.dev1/massos-2026.09.dev1-rootfs-aarch64-xfce.tar.zst">Download</a>, <a href="https://archive.massos.org/builds/aarch64/2026.09.dev1/massos-2026.09.dev1-rootfs-aarch64-xfce.tar.zst.b2">Checksum</a>, <a href="https://archive.massos.org/builds/aarch64/2026.09.dev1/massos-2026.09.dev1-rootfs-aarch64-xfce.tar.zst.asc">Signature</a></li>
+        </ul>
+        <h2>Additional notes</h2>
+        <p>All builds, including older releases, are available from <a href="https://archive.massos.org/builds/" target="_blank">this web server</a>. Please note that we no longer provide images without firmware - all rootfs and ISO images now contain firmware by default. Please see <a href="https://github.com/MassOS-Linux/MassOS/wiki/MassOS-and-Free-Software#firmware" target="_blank">this</a> for more information as well as the rationale behind this decision.</p>
+        <p>After downloading, please read <a href="https://github.com/MassOS-Linux/MassOS/wiki/Installing-MassOS" target="_blank">Installing MassOS</a> for a detailed guide on how to create a bootable USB flash drive and install MassOS onto your computer. The installation guide also provides information on how to use the checksum and/or signature file(s) to verify the integrity of your download.</p>
+        <p>MassOS supports <strong>UEFI Secure Boot</strong>, however if your system uses it, you may need to perform some additional steps before and after installing MassOS - see <a href="https://github.com/MassOS-Linux/MassOS/wiki/UEFI-Secure-Boot" target="_blank">the UEFI Secure Boot documentation article</a> for more information.</p>
+        <p>At the time of writing, <strong>x86_64</strong> is the only fully supported architecture. <strong>aarch64</strong> is under heavy development and the <strong>aarch64</strong> MassOS images may not (yet) be compatible with all systems, nor fully stable even on "supported" systems. Please see <a href="https://github.com/MassOS-Linux/MassOS/wiki/Architecture-Support" target="_blank">this page in the MassOS documentation</a> for more information about supported architectures.</p>
       </div>
     </div>
   </div>
