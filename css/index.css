@@ -96,10 +96,6 @@ body {
   text-decoration: underline;
 }
 
-.text {
-  max-width: 50vw;
-}
-
 a {
   color: var(--primary);
   text-decoration: none;
@@ -107,6 +103,28 @@ a {
 
 img {
   width: 50vw;
+}
+
+.text {
+  width: 90vw;
+}
+
+@media (min-width: 1000px) {
+  .text {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .text {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1900px) {
+  .text {
+    width: 50vw;
+  }
 }
 
 .sstext {
